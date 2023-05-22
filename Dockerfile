@@ -1,3 +1,3 @@
 FROM pierrezemb/gostatic
-COPY loop.gif /srv/http/static/loop.gif
+COPY ./static /srv/http/static/
 ENTRYPOINT ["/goStatic", "-port", "8081"]
